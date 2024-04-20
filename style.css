@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body{
+    background-color: rgb(4, 22, 46);
+}
+.items{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+.active{
+    display: block;
+    animation: play .5s ease ;
+}
+@keyframes play{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.items p{
+    position: absolute;
+    left: 10px;
+    height: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.zahra-sliders {
+  width: 600px;
+  height: 400px;
+  box-shadow: 5px 5px 8px gray,
+  -5px -5px 8px gray;
+  position: relative;
+  top: 100px;
+  margin: 0px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.next , .before{
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    transform: translatey(-50%);
+    color: aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    border-radius: 5px;
+    user-select: none;
+}
+.next{
+    right: 7px;
+}
+.before{
+    left: 30px;
+}
+.next:hover , .before:hover{
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+.point{
+    width:430px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    margin: auto;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.point span{
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    /* margin:1px; */
+    transition: 0.5s;
+    opacity: 0.4;
+}
+.point .point-active{
+    opacity: 1;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="zahra-sliders">
+        <div class="items active">
+            <p class="index">1/6</p>
+            <img src="imgs/1.jpg" alt="">
+        </div>
+        <div class="items">
+            <p class="index">2/6</p>
+            <img src="imgs/2.jpg" alt="">
+        </div>
+        <div class="items">
+            <p class="index">3/6</p>
+            <img src="imgs/3.jpg" alt="">
+        </div>
+        <div class="items">
+            <p class="index" style="color: white;">4/6</p>
+            <img src="imgs/4.jpg" alt="">
+        </div>
+        <div class="items">
+            <p class="index">5/6</p>
+            <img src="imgs/5.jpg" alt="">
+        </div>
+        <div class="items">
+            <p class="index">6/7</p>
+            <img src="imgs/6.jpg" alt="">
+        </div>
+        <div class="items">
+            <p class="index">7/7</p>
+            <img src="imgs/7.jpg" alt="">
+        </div>
+
+        <div class="before"   onclick="btn(-1)">&#10094</div>
+        <div class="next"  onclick="btn(1)">&#10095</div>
+    </div>
+
+    <div class="point">
+        <span class="point-active" onclick="pointz(0)"><img src="imgs/1.jpg" alt="" ></span>
+        <span onclick="pointz(1)"><img src="imgs/2.jpg" alt="" ></span>
+        <span onclick="pointz(2)"><img src="imgs/3.jpg" alt=""></span>
+        <span onclick="pointz(3)"><img src="imgs/4.jpg" alt=""></span>
+        <span onclick="pointz(4)"><img src="imgs/5.jpg" alt=""></span>
+        <span onclick="pointz(5)"><img src="imgs/6.jpg" alt=""></span>
+        <span onclick="pointz(6)"><img src="imgs/7.jpg" alt=""></span>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
